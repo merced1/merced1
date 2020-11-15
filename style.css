@@ -28,19 +28,34 @@ body{margin:0px;padding:0px;border:0px;background-color:green}
 #whatsapp{bottom:2%;position: absolute;width: 18%;z-index: 5;bottom:25px;display:inline-block;left:44%;opacity:100%}
 #maps{position: absolute;width: 10%;z-index: 4;bottom:17%;display:inline-block;left:45%;opacity:100%}
 .white{background-color:white;width:102.5%;position: absolute;bottom:5%;z-index: 0;display: inline-block;left:-1.5%;height:10%;opacity: 100%}
-#tomato{position: absolute;width: 50%;z-index: 2;bottom:50%;display:inline-block;left:59%;opacity:100%}
+#tomato {
+    position: absolute;
+    width: 35%;
+    z-index: 2;
+    bottom: 50%;
+    display: inline-block;
+    left: 65%;
+    opacity: 100%;
+}
 #kebabfotonew{position: absolute;width: 50%;z-index: 2;bottom:10%;display:inline-block;left:59%;opacity:100%}
-
 #pepper{position: absolute;width: 25%;z-index: 2;bottom:50%;display:inline-block;left:-5%;opacity:100%;transform: rotate(30deg);margin-left: 0px;}
 #bread{position: absolute;width: 35%;z-index: 2;bottom:20%;display:inline-block;left:0%;opacity:100%;;}
 #hotdog{position: absolute;width: 20%;z-index: 2;bottom:10%;display:inline-block;left:0%;opacity:100%;;}
-
-#tomatofade{position: absolute;width: 40%;z-index: 2;bottom:30%;left:79%;}
+#kebabfotonew {
+    position: absolute;
+    width: 40%;
+    z-index: 2;
+    bottom: 8%;
+    display: inline-block;
+    left: 60.5%;
+    opacity: 100%;
+}
+#tomatofade{position: absolute;width: 40%;z-index: 2;bottom:50%;left:65%;}
 #kebabfotofade{position: absolute;width: 40%;z-index: 2;bottom:10%;left:79%;}
 
 #pepperfade{position: absolute;width: 25%;z-index: 2;bottom:55%;left:-15%;transform: rotate(30deg);margin-left: 0px;}
 #breadfade{position: absolute;width: 35%;z-index: 2;bottom:20%;left:-20%;}
-#hotdogfade{position: absolute;width: 20%;z-index: 2;bottom:10%;left:-20%;}
+#hotdogfade{position: absolute;width: 20%;z-index: 2;bottom:10%;left:-20%;display: none;}
 
 
 #kebabfoto{position: absolute;width: 50%;z-index: 2;bottom:14%;display:none;left:50%;opacity:100%}
@@ -89,17 +104,17 @@ body{margin:0px;padding:0px;border:0px;background-color:green}
     z-index: 0
      }
   }
-  #hotdogfade{display: none;transition:transform 1s;
-        animation-name: hotdog;
+  #hotdogfade{transition:transform 1s;
+        animation-name: hotdogfade;
         animation-duration: 20s;
         animation-fill-mode: forwards;
         animation-delay: 0s;
         opacity:0.8;
       }
-      @keyframes hotdog {
+      @keyframes hotdogfade {
        0%{
          opacity: 0.8;
-         transform: translate3d(30%, 0,0);
+         transform: translate3d(100%, 0,0);
        }
        5% {
          opacity: 0;
@@ -141,25 +156,26 @@ body{margin:0px;padding:0px;border:0px;background-color:green}
       @keyframes tomatofade {
        0%{
          opacity: 0.8;
-         transform: translate3d(-50%, 0,0);
+         transform: translate3d(-30%,0%,0);
        }
        5% {
          opacity: 0;
          transform:none;
        }
        20%,100%{
+         left:60%
       width:0%;height:0%;
       z-index: 0
        }
     }
     #kebabfotofade{display: none;transition:transform 1s;
-          animation-name: tomatofade;
+          animation-name: kebabfade;
           animation-duration: 10s;
           animation-fill-mode: forwards;
           animation-delay: 0s;
           opacity:0.8;
         }
-        @keyframes tomatofade{
+        @keyframes kebabfade{
          0%{
            opacity: 0.8;
            transform: translate3d(-50%, 0,0);
@@ -184,8 +200,46 @@ body{margin:0px;padding:0px;border:0px;background-color:green}
 #bebidas{border-radius: 10px;border-width: 5px;border-style: solid;background-color: none;color:white;border-left: none;font-weight: bolder;border-color:red;border-right:none;font-size: 170%;margin-bottom: 20%;transition:0.5s}
 #kebab{border-radius: 10px;border-width: 5px;border-style: solid;background-color: none;color:white;border-left: none;font-weight: bolder;border-color:red;border-right:none;font-size: 170%;margin-bottom: 20%;transition:0.5s}
 #camperos{border-radius: 10px;border-width: 5px;border-style: solid;background-color: none;color:white;border-left: none;font-weight: bolder;border-color:red;border-right:none;font-size: 170%;margin-bottom: 20%;transition:0.5s}
-#google{ opacity: 100%;position: absolute;width: 35%;z-index:5;display:inline-block;bottom:-7%;left:0%}
-#trip{ opacity: 100%;position: absolute;width: 32%;z-index:5;display:inline-block;bottom:-7%;left:66%}
+#trip {
+    opacity: 100%;
+    position: absolute;
+    width: 13%;
+    z-index: 5;
+    display: inline-block;
+    bottom: -8%;
+    left: 82%;
+}
+#frame{position: absolute;border-radius: 100%;width:85%;height:46%;display:none;z-index: 6;left:8%;top:10%}
+#google {
+    opacity: 100%;
+    position: absolute;
+    width: 8%;
+    z-index: 5;
+    display: inline-block;
+    bottom: -7%;
+    left: 5%;
+}
+#llamar{transition: none;
+    opacity: 100%;
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    z-index: 10;
+    display: none;
+    bottom: 20%;
+left: 43%;
+}
+
+#googlebig {transition: 0.7s;
+    opacity: 100%;
+    position: absolute;
+    width: 0%;
+    z-index: 5;
+    display: inline-block;
+    bottom: 0%;
+    left: 0%;
+}
+
 #realkebab:hover{border-top-color:blue;line-height: 100%;border-bottom-color:red}
 
 #kebab:hover{border-top-color:blue;line-height: 100%;border-bottom-color:red}
@@ -250,7 +304,7 @@ h3{color:black;font-weight:bolder;font-size: 115%%;float: left;font-family: mono
 #bebidas2{border-radius: 10px;border-width: 5px;border-style: solid;background-color: none;color:white;border-left: none;font-weight: bolder;border-color:white;border-right:none;font-size: 180%;margin-bottom: 30%}
 #kebab2{border-radius: 10px;border-width: 5px;border-style: solid;background-color: none;color:white;border-left: none;font-weight: bolder;border-color:white;border-right:none;font-size: 180%;margin-bottom: 30%;}
 #camperos2{border-radius: 10px;border-width: 5px;border-style: solid;background-color: none;color:white;border-left: none;font-weight: bolder;border-color:white;border-right:none;font-size: 180%;margin-bottom: 30%;}
-#logo{transition: width 0.5s, height 1s, transform 1s;
+#logo,#frame,#trip,#google{transition: width 0.5s, height 1s, transform 1s;
   animation-name: logo;
   animation-duration: 1s;
   animation-fill-mode:forwards;
@@ -263,6 +317,20 @@ h3{color:black;font-weight:bolder;font-size: 115%%;float: left;font-family: mono
     0%{ opacity: 0}
     100% { opacity: 1}
 }
+#llamar{
+animation-name: llamar;
+animation-duration: 1s;
+animation-fill-mode:forwards;
+animation-iteration-count: 10000000;
+animation-timing-function: ease-in-out;
+animation-delay: 1.2s;
+opacity:0;
+}
+@keyframes llamar{
+  0%,100{ opacity: 0}
+  50% { opacity: 1}
+}
+
 
 
 
@@ -501,4 +569,119 @@ h3{color:black;font-weight:bolder;font-size: 115%%;float: left;font-family: mono
     }
     100%{top:0%;opacity: 0;z-index: 0;}
   }
+}
+@media only screen  and (min-device-width:412px) {
+
+#menu {
+      border-width: 0.2%;
+      height: 70%;
+      width: 50%;
+      border-color: black;
+      border-style: none;
+      z-index: 4;
+      top: 29.5%;
+      display: inline-block;
+      text-align: center;
+      line-height: 1%;
+      left: 27%;
+      font-family: monospace;
+  }
+
+
+
+
+
+#kebabtext {
+    line-height: 120%;
+    left: 4%;
+    width: 90%;
+    top: 25%;
+    position: absolute;
+    z-index: 3;
+    border-color: red;
+    border-style: hidden;
+    font-family: monospace;
+}
+.h2taco {
+    color: lightyellow;
+    font-weight: bolder;
+    font-size: 140%;
+    float: left;
+    font-family: monospace;
+}
+.tacoprice {
+    text-align: center;
+    text-align-last: center;
+    position: relative;
+    left: 2%;
+    color: gold;
+    font-weight: bolder;
+    font-size: 130%;
+    font-family: monospace;
+    border-style: groove;
+    background-color: red;
+    border-color: red;
+    border-radius: 10%;
+}
+.h3pizza {
+    color: lightyellow;
+    font-weight: bolder;
+    font-size: 155%;
+    float: left;
+    font-family: monospace;
+}
+.h2burger {
+    color: lightyellow;
+    font-weight: bolder;
+    font-size: 150%;
+    float: left;
+    font-family: monospace;
+}
+#gondotext {
+    height: 50%;
+    line-height: 155%;}
+.completo {
+        text-align: center;
+        text-align-last: center;
+        position: relative;
+        left: 2%;
+        color: gold;
+        font-weight: bolder;
+        font-size: 120%;}
+#camperostext {
+            line-height: 150%;
+            left: 4%;
+            width: 90%;}
+.drinks {
+                word-spacing: 1px;
+                margin-top: 0px;
+                margin-bottom: 0;
+                color: gold;
+                font-weight: bolder;
+                font-size: 160%;
+                float: left;
+                font-family: monospace;
+            }
+
+#bebidastext {
+              line-height: 130%;
+              left: 4%;
+              width: 90%;
+              top: 35%;}
+.h2kebab {
+                  margin-top: 0px;
+                  margin-bottom: 0;
+                  color: lightyellow;
+                  font-weight: bolder;
+                  font-size: 131%;
+                  float: left;
+                  font-family: monospace;
+              }
+#realkebabtext {
+                  height: 100%;
+                  line-height: 160%;
+                  left: 4%;
+                  width: 90%;
+                  top: 27%;
+}
 }

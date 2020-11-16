@@ -272,9 +272,9 @@ left: 43%;
 h2{color:black;font-weight:bolder;font-size: 110%;float: left;font-family: monospace;}
 
 .p1{color:white;font-weight: bolder;font-size: 110%;float:right;font-family: monospace;border-style:groove;background-color:red;border-color:red;border-radius: 10%;}
-#bebidastext{height:100%;line-height: 90%;left: 4%;width:90%;top:27%; position: absolute;z-index: 3;border-width: 10%;border-color:red;border-style: hidden;display: none;font-family: monospace;}
+#bebidastext{height:70%;line-height: 90%;left: 4%;width:90%;top:27%; position: absolute;z-index: 3;border-width: 10%;border-color:red;border-style: hidden;display: none;font-family: monospace;}
 #kebabtext{line-height: 120%;left: 4%;width:90%;top:20%; position: absolute;z-index: 3;border-width: 10%;border-color:red;border-style: hidden;display: none;font-family: monospace;}
-#realkebabtext{height:100%;line-height: 90%;left: 4%;width:90%;top:27%; position: absolute;z-index: 3;border-width: 10%;border-color:red;border-style: hidden;display: none;font-family: monospace;}
+#realkebabtext{height:70%;line-height: 90%;left: 4%;width:90%;top:27%; position: absolute;z-index: 3;border-width: 10%;border-color:red;border-style: hidden;display: none;font-family: monospace;}
 #gondotext{height:50%;line-height: 115%;left: 4%;width:90%;top:27%; position: absolute;z-index: 3;border-width: 10%;border-color:red;border-style: hidden;display: none;font-family: monospace;}
 #pantext{line-height: 120%;left: 4%;height:50%;width:90%;top:30%; position: absolute;z-index: 3;border-width: 10%;border-color:red;border-style: hidden;display: none;font-family: monospace;}
 #camperostext{line-height: 110%;left: 4%;width:90%;top:27%; position: absolute;z-index: 3;border-width: 10%;border-color:red;border-style: hidden;display: none;font-family: monospace;}
@@ -666,11 +666,13 @@ opacity:0;
                 font-family: monospace;
             }
 
-#bebidastext {
-              line-height: 130%;
-              left: 4%;
-              width: 90%;
-              top: 35%;}
+  #bebidastext {
+                line-height: 130%;
+                left: 4%;
+                width: 90%;
+                top: 35%;
+                height:70%
+            }
 .h2kebab {
                   margin-top: 0px;
                   margin-bottom: 0;
@@ -680,11 +682,11 @@ opacity:0;
                   float: left;
                   font-family: monospace;
               }
-#realkebabtext {
-                  height: 100%;
+  #realkebabtext {
+                  height: 70%;
                   line-height: 160%;
                   left: 4%;
                   width: 90%;
                   top: 27%;
-}
+              }
 }
